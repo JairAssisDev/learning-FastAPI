@@ -18,7 +18,7 @@ class ContaPagarReceberRequest(BaseModel):
     valor: float
     tipo: str
 
-@router.get("/",response_model=List[ContaPagarReceberResponse])
+@router.get("",response_model=List[ContaPagarReceberResponse])
 def lista_contas():
     return [
         ContaPagarReceberResponse(id=1,
